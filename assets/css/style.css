@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+@media (max-width: 480px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    .benefits {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
 body {
     background-color: #d9dcd6;
 }
@@ -51,12 +62,13 @@ p {
 }
 
 .hero {
-    height: 800px;
+    height: 100vh;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    margin-bottom: 25px;
 }
 
 .float-left {
@@ -72,11 +84,12 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
 }
 
 .benefits {
     margin-right: 20px;
+    flex-direction: ;
+    flex-wrap: wrap;
     padding: 20px;
     clear: both;
     float: right;
