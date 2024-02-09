@@ -5,4 +5,4 @@ The purpose of this project was to make the html more semantic and add accessibi
 - Ensured both css and html files are properly commented & annotated
 - Adding responsive design elements, making it mobile and tablet friendly
 - Fixed broken links
-- 
+-
