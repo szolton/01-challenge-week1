@@ -98,75 +98,42 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.sidebar {
     margin-bottom: 32px;
-    color: #ffffff;
+   color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+.sidebar h3 {
+   margin-bottom: 10px;
+   text-align: center;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.sidebar img {
+   display: block;
+   margin: 10px auto;
+   max-width: 150px;
 }
 
 /* main copy */
-.search-engine-optimization {
+.mainbody {
     margin-bottom: 20px;
-    flex-direction: column;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+
+}
+.mainbody img {
+    max-height: 200px;
 }
 
-.online-reputation-management {
+.mainbody h2 {
     margin-bottom: 20px;
-    flex-direction: column;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    font-size: 36px;
 }
 
+/* excess CSS I'm currently trying to remove lol */
 .social-media-marketing {
     margin-bottom: 20px;
     flex-direction: column;
@@ -177,29 +144,10 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
-    flex-direction: column;
-}
-
-.online-reputation-management img {
-    flex-direction: column;
-    max-height: 200px;
-}
 
 .social-media-marketing img {
     flex-direction: column;
     max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .social-media-marketing h2 {
