@@ -1,24 +1,18 @@
 * {
     box-sizing: border-box;
+    flex-wrap: wrap;
+    
     padding: 0;
     margin: 0;
 }
-
-@media (max-width: 480px) {
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-    .benefits {
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding: 20px;
-    }
-}
-
+/* body */
 body {
     background-color: #d9dcd6;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
-
+/* header and navigation info */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,6 +20,7 @@ body {
     color: #ffffff;
 }
 
+/* logo stuff */
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -35,7 +30,7 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -43,13 +38,14 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    
 }
 
 a {
@@ -61,6 +57,7 @@ p {
     font-size: 16px;
 }
 
+/* background */
 .hero {
     height: 100vh;
     width: 100%;
@@ -69,6 +66,7 @@ p {
     background-size: cover;
     background-position: center;
     margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .float-left {
@@ -84,11 +82,15 @@ p {
 .content {
     width: 75%;
     display: inline-block;
+    flex-direction: column;
+    
+
 }
 
+/* right sidebar info */
 .benefits {
     margin-right: 20px;
-    flex-direction: ;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
     clear: both;
@@ -147,8 +149,10 @@ p {
     max-width: 150px;
 }
 
+/* main copy */
 .search-engine-optimization {
     margin-bottom: 20px;
+    flex-direction: column;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -158,6 +162,7 @@ p {
 
 .online-reputation-management {
     margin-bottom: 20px;
+    flex-direction: column;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -167,6 +172,7 @@ p {
 
 .social-media-marketing {
     margin-bottom: 20px;
+    flex-direction: column;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -176,13 +182,16 @@ p {
 
 .search-engine-optimization img {
     max-height: 200px;
+    flex-direction: column;
 }
 
 .online-reputation-management img {
+    flex-direction: column;
     max-height: 200px;
 }
 
 .social-media-marketing img {
+    flex-direction: column;
     max-height: 200px;
 }
 
@@ -201,6 +210,35 @@ p {
     font-size: 36px;
 }
 
+/* responsive */
+@media screen and (max-width: 768px) {
+    .main,
+    .nav,
+    .benefits,
+    .hero, {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: flex;
+      width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        display: grid;        
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: auto; /* Adjusted width for mobile */
+        height: auto;
+    }
+}
+/* footer */
 .footer {
     padding: 30px;
     clear: both;
