@@ -59,10 +59,11 @@ p {
 .hero {
     height: 100vh;
     width: 100%;
-    margin-bottom: 25px;
+    display: flex;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 25px;
 }
 
@@ -137,6 +138,12 @@ p {
     body {
         display: flex;
     }
+
+    .hero {
+        background-size: contain;
+        background-size: cover; 
+    }
+    
     .header h1 {
         font-size: 72px;
         text-align: center;
@@ -176,7 +183,7 @@ p {
     .mainbody h2 {
         font-size: 48px;
         text-align: center;
-        margin-top: 200px;
+        /* margin-top: 200px; */
     }
 
     .mainbody p {
